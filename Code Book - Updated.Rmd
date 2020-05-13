@@ -1,0 +1,27 @@
+---
+title: "Code Book - Updated"
+output: html_document
+---
+
+## Source for prepared data
+The original source data from the Human Activity Recognition Using Smartphones Data Set, which can be downloaded at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+# Preparing source data for publishing
+
+## Run_analysis
+Executing the provided "run_analysis.R" prepares the source data along the five(5) steps below:   
+1. Reading in the files and merging the training and the test sets to create one data set.   
+2. Extracting only the measurements on the mean and standard deviation for each measurement   
+4. Appropriately labeling the data set with descriptive variable names   
+5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject   
+ 
+Prior to running "run_analysis.R", please make sure the original source data is located in the working directory and un-zipped. 
+
+## Variables created during data preparation
+* `x_train`, `y_train`, `x_test`, `y_test`, `subject_train` and `subject_test` were assigned to files contained in the original source data download
+
+* `x_total`, `y_total` and `subject_total` join the previously separate datasets
+
+* `var_names` contains the descriptive variable names for `x_total` dataset, `activity_labels` contains the descriptive activity names for `y_total`
+
+
